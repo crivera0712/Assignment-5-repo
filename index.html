@@ -14,10 +14,10 @@
   <nav class = "menue">
     <ul>
       <li>
-        <a href="./two.html">two.html</a>
+        <a href="views/two.html">two.html</a>
       </li>
       <li> 
-      <a href="./three.html">three.html</a>
+      <a href="views/three.html">three.html</a>
       </li>
     
     </ul>
@@ -31,7 +31,10 @@
 
     <p class = "css-question">
       <code>
-        To be able to include an external CSS file external inline or index
+        To be able to apply external CSS to an html file you have to use an
+       external style sheet. External stylesheets have a ".css" extension. A single CSS file can be linked to multiple
+       html files. To link external CSS file to an html file you need to create a &lt;link&gt; element. For example:
+       &lt;link rel = "stylesheet" href="style.css"&gt;
       </code>
     </p>
 
@@ -39,7 +42,18 @@
       How to Use JavaScript in a Webpage
     </h2>
     <p class = "js-question">
+      <code>
+        There are multiple ways to use JavaScript code in an html Webpage. One way to implement JS in an html files is by
+        linking an external script. The 
+        &lt;script&gt; element allows you to execute an external .js script by linking it. 
+        For example: &lt;script src="path/to/script.js"&gt;&lt;script&gt;. Another way to use JS in an html file is by writing JS within the .html file. This can also be done
+        with the &lt;script&gt; element. For example: &lt;script&gt; window.addEventListener("load", () => {
+          console.log("This function is executed once the page is fully loaded");
+        }); &lt;/script&gt;
 
+
+      </code>
     </p>
+  
   </nav>
 </body>
